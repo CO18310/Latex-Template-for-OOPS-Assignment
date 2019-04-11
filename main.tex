@@ -1,8 +1,6 @@
-
 \documentclass[a4paper, 11pt, oneside]{book} % A4 paper size, default 11pt font size and oneside for equal margins
-
-\newcommand{\plogo}{\fbox{$\mathcal{PL}$}} % Generic dummy publisher logo
-
+\usepackage{graphicx}
+\usepackage{caption} % for \captionof
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{fouriernc} % Use the New Century Schoolbook font
@@ -14,6 +12,10 @@
 \begin{document} 
 
 \begin{titlepage} % Suppresses headers and footers on the title page
+
+	\begin{center}
+   \includegraphics[scale=0.2]{ccet.png}
+\end{center}
 
 	\centering % Centre everything on the title page
 	
@@ -56,10 +58,6 @@
 	\vspace{0.5\baselineskip} % Whitespace before the editors
 	
 	{\scshape\Large Sarthak \\} % Editor list
-	
-	\vspace{0.5\baselineskip} % Whitespace below the editor list
-	
-	\textit{Chandigarh College of Engineering and Technology \\ Chandigarh} % Editor affiliation
 	
 	\vfill % Whitespace between editor names and publisher logo
 	

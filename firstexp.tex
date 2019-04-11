@@ -1,0 +1,38 @@
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+
+class max{
+	private:
+		int a,b;
+	public:
+		void input(void);
+		void display(void);
+};
+
+void max :: input(void){
+	cout<<"Enter two numbers: "<<endl;
+	cin>>a>>b;
+}
+
+void max:: display(void){
+	if(a > b)
+		cout<<"Max no. is: "<<a;
+	else
+		cout<<"Max no. is: "<<b;
+}
+
+int main(){
+	max m;
+	m.input();
+	m.display();
+	return 0;
+}
+\end{lstlisting}
+
+\subsection{Outupt}
+Output is: 
+\\* \tab Enter two numbers: 
+\\* \tab 4
+\\* \tab 5
+\\* \tab Max no. is 5
