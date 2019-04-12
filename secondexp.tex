@@ -1,0 +1,23 @@
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+
+class ref{
+	int x;
+	public: 
+		void r(){
+			x =a;
+			int &y = x;
+			cout<<"Variable x= "<<endl<<x;
+			cout<<"Variable y= "<<endl<<y;
+		}
+		
+};
+
+int main(){
+	ref p;
+	p.r();
+	return 0;
+}
+\end{lstlisting}
+

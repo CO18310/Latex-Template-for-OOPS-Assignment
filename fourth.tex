@@ -1,0 +1,26 @@
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+int x = 8;
+
+class scope{
+	int x;
+	public: 
+		void sc(){
+			x = 7;
+			cout<<"Local Varible: "<<x<<endl;
+			cout<<"Global Varible: "<<::x<<endl;
+		}
+};
+
+int main(){
+	scope s;
+	s.sc();
+	return 0
+}
+
+\end{lstlisting}
+\subsection{Outupt}
+Output is:  
+\\* \tab Local Varible: 7
+\\* \tab Global Varible: 8

@@ -1,6 +1,17 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption} % for \captionof
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{fouriernc} % Use the New Century Schoolbook font
+\hypersetup{
+	colorlinks = true,
+	linkcolor = black,
+	linktoc = all 
+}
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
 
@@ -8,20 +19,37 @@
 \author{Sarthak}
 
 \begin{document}
+\input{main1}
 \maketitle
 \tableofcontents
 \newpage
 
 \section{Find the max number from two number using Class}
 \input{firstexp}
+\newpage
 
 \section{Use of Alias}
+\input{secondexp}
+\newpage
+
 \section{Size of Float, char, int and double}
+\input{third}
+\newpage
+
 \section{Use of Scope Resolution}
+\input{fourth}
+\newpage
+
 \section{Function with Default Argument}
+\input{fifth}
+\newpage
+
 \section{Default Argument Constructor}
+\input{sixth}
+\newpage
+
 \section{Copy Constructor}
-\section{Use of Inheritance}
-\section{Addition of Matrices}
+\input{seventh}
+\newpage
 
 \end{document}

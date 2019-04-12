@@ -1,0 +1,29 @@
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+
+class intab{
+	int x,y;
+	intab(){
+		x = y = 0;
+		cout<<endl<<"Constructor"<<endl;
+	}
+	intab(int x, int y = 20){
+		cout<<x<<endl<<y<<endl;
+	}
+};	
+
+int main(){
+	intab a(10);
+	intab b(500, 100);
+	return 0
+}
+
+\end{lstlisting}
+\subsection{Outupt}
+Output is:  
+\\* \tab 10
+\\* \tab 20
+\\* \tab 500
+\\* \tab 100
+

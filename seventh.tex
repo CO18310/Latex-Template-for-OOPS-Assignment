@@ -1,0 +1,31 @@
+\begin{lstlisting}
+#include<iostream>
+using namespace std;
+
+class intab{
+	int id;
+	public:
+		a(){}
+		a(int a){id = a;}
+		a(a, &b){id = b.id;}
+		void display{cout<<id;}
+};	
+
+int main(){
+	a B(10);
+	a C(B);
+	a D = B;
+	
+	B.display();
+	C.display();
+	D.display();
+	return 0
+}
+
+\end{lstlisting}
+\subsection{Outupt}
+Output is:  
+\\* \tab 10
+\\* \tab 10
+\\* \tab 10
+
